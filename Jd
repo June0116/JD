@@ -21,5 +21,7 @@
 取关京东店铺商品 = type=cron,cronexp="55 23 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_unsubscribe.js
 jd_appopen = type=http-request,pattern=^https:\/\/api\.m\.jd\.com\/openUpgrade,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/utils/jd_appopen.js,script-update-interval=0
 
+闪购盲盒 = type=cron,cronexp="20 8 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_sgmh.js
+
 [MITM]
 hostname = %APPEND% me-api.jd.com, draw.jdfcloud.com, jdjoy.jd.com, account.huami.com, api.m.jd.com
